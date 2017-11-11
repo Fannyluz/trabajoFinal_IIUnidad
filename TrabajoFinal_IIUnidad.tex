@@ -19,7 +19,6 @@
 \begin{document}
 
 
-
 \author{Fanny Clemente}
 \title{Caratula}
 
@@ -99,8 +98,8 @@ Instalacion de Oracle Database 12c
 \newpage
 \section{Oracle Linux modo Terminal}
 \subsection{Instalacion}
-Para poder realizar la instalación de la base de datos  debemos de tener lo que es el Sistema operativo Oracle Linux. \\
-- Iniciaremos sesión en Oracle Linux. \\
+Para poder realizar la instalacion de la base de datos  debemos de tener lo que es el Sistema operativo Oracle Linux. \\
+- Iniciaremos sesion en Oracle Linux. \\
 \begin{center}
 \includegraphics[width=8cm]{IMG/oracle1.png} 
 \end{center}
@@ -113,6 +112,78 @@ Para poder realizar la instalación de la base de datos  debemos de tener lo que
 \begin{center}
 \includegraphics[width=8cm]{IMG/oracle3.png} 
 \end{center}
+
+Paso 1: Una vez iniciado sesion con el usuario root abrimos una terminal ejecutamos el comando, lo que va hacer este comando es instalar repositorios que son necesarios para la instalacion de oracle database
+\begin{center}
+\includegraphics[width=10cm]{./oraclelinux/1.png}
+\includegraphics[width=10cm]{./oraclelinux/2.png}
+\includegraphics[width=10cm]{./oraclelinux/3.png}
+\end{center}
+
+Paso 2 : Una vez instalada todos los repositorios faltantes Creamos la carpeta donde se instalara los db de oracle
+
+\begin{center}
+\includegraphics[width=15cm]{./oraclelinux/4.png}
+\end{center}
+Paso 3 : Montamos un usb con el instalador en este caso tenemos el instaldor en dos partes en archivos zip,una vez montado el usb copiamos los archivos a la carpeta creada anteriormente /home/OraDB11g.
+
+\begin{center}
+\includegraphics[width=10cm]{./oraclelinux/5.png}
+\includegraphics[width=10cm]{./oraclelinux/6.png}
+\end{center}
+
+Paso 4 : Una vez copiado los archivos nos dirigimos a la carpeta /home/OraDB11g  para extraer el instalador
+\begin{center}
+\includegraphics[width=10cm]{./oraclelinux/7.png}
+\end{center}
+Paso 5 : Una vez extraida se creara un carpeta database.
+
+\begin{center}
+\includegraphics[width=10cm]{./oraclelinux/8.png}
+\end{center}
+Paso 6 : Ahora para ejecutar el runInstaller debemos iniciar sesion con el usuario oracle para eso de asiganamos una contrasena con el comando passwd.
+\begin{center}
+\includegraphics[width=10cm]{./oraclelinux/9.png}
+\end{center}
+
+Paso 7 : Luego iniciamos sesion y nos dirimos a la carpeta donde se encuentra el instalador y ejecutamos runInstaller.
+
+\begin{center}
+\includegraphics[width=10cm]{./oraclelinux/10.png}
+\includegraphics[width=10cm]{./oraclelinux/11.png}\\
+Proporcionamos una direccion de correo electronico para recibir informacion sobre los problemas de seguridad.\\
+\includegraphics[width=10cm]{./oraclelinux/12.png}\\
+Seleccionamos cualquiera de las opciones.\\
+\includegraphics[width=10cm]{./oraclelinux/13.png}\\
+Seleccionamos el tipo de instalacion de base de datos.\\
+\includegraphics[width=10cm]{./oraclelinux/14.png}\\
+Seleccionamos los idiomas en que se ejecutara el producto.\\
+\includegraphics[width=10cm]{./oraclelinux/15.png}\\
+Seleccionamos la edicion de base de datos que deseamos instalar.\\
+\includegraphics[width=10cm]{./oraclelinux/16.png}\\
+Especificamos la ruta de acceso al direcctorio a la base de Oracle.\\
+\includegraphics[width=10cm]{./oraclelinux/17.png}\\
+Especificamos un directorio para los archivos de instalacion.\\
+\includegraphics[width=10cm]{./oraclelinux/18.png}\\
+Otorgamos los permisos necesarios.\\
+\includegraphics[width=10cm]{./oraclelinux/19.png}\\
+Verificara los requisitos minimos de instalacion y configuracion.\\
+\includegraphics[width=10cm]{./oraclelinux/20.png}\\
+\includegraphics[width=10cm]{./oraclelinux/21.png}\\
+\includegraphics[width=15cm]{./oraclelinux/22.png}\\
+Nos mostrara el resumen de lo que vamos a instalar.\\
+\includegraphics[width=10cm]{./oraclelinux/23.png}\\
+\includegraphics[width=15cm]{./oraclelinux/24.png}\\
+Antes de terminar la instalacion nos saltara un ventana donde nos indica que antes de terminar la instalacion debemos ejecutar algunos scripts\\
+\includegraphics[width=10cm]{./oraclelinux/25.png}\\
+Abrimos otra terminal e iniciamos sesion con el usuario "root" y ejecutamos el primer script
+\includegraphics[width=10cm]{./oraclelinux/27.png}\\
+Ahora vamos con el segundo  con esto bastara y terminara la instalacion\\
+\includegraphics[width=10cm]{./oraclelinux/28.png}\\
+
+\includegraphics[width=10cm]{./oraclelinux/29.png}\\
+\end{center}
+
 
 \subsection{implementacion}
 
